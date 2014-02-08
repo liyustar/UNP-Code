@@ -1,4 +1,4 @@
-OBJ = error.o
+OBJ = error.o wrapsock.o
 
 all: ${OBJ}
 
