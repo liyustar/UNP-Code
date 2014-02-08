@@ -9,7 +9,7 @@
 #include <arpa/inet.h>	/* inet(3) functions */
 #include <errno.h>
 #include <fcntl.h>		/* for nonblocking */
-#include <netdg.h>
+#include <netdb.h>
 #include <signal.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -21,7 +21,7 @@
 #endif
 
 /* Miscellaneous constants */
-#define MAZLINE		1024	/* max text line length */
+#define MAXLINE		1024	/* max text line length */
 #define BUFFSIZE	8192	/* buffer size for reads and writes */
 
 /* Define some port number that can be used for our examples */
