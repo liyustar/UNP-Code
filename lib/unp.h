@@ -20,6 +20,8 @@
 #define bzero(ptr,n)	memset(ptr, 0, n)
 #endif
 
+#define LISTENQ		1024
+
 /* Miscellaneous constants */
 #define MAXLINE		1024	/* max text line length */
 #define BUFFSIZE	8192	/* buffer size for reads and writes */

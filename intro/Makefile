@@ -1,6 +1,6 @@
 CFLAGS = -I../lib
 
-EXEC = daytimetcpcli
+EXEC = daytimetcpcli daytimetcpsrv
 
 all: ${EXEC}
 
