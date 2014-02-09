@@ -1,6 +1,6 @@
 include ../Make.defines
 
-PROGS = daytimetcpcli daytimetcpsrv
+PROGS = daytimetcpcli daytimetcpsrv byteorder
 
 all: ${PROGS}
 
