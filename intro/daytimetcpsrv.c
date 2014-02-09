@@ -25,8 +25,8 @@ main(int argc, char **argv)
 
 		ticks = time(NULL);
 		snprintf(buff, sizeof(buff), "%.24s\r\n", ctime(&ticks));
-		write(connfd, buff, strlen(buff));
+		Write(connfd, buff, strlen(buff));
 
-		close(connfd);
+		Close(connfd);
 	}
 }
