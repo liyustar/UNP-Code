@@ -1,6 +1,7 @@
-OBJ = error.o wrapsock.o
+include ../Make.defines
 
-all: ${OBJ}
+all: ${LIB_OBJS}
+	ar rv ${LIBUNP_NAME} $?
 
 clean:
-	-rm ${OBJ}
+	rm -f ${PROG} ${CLEANFILES}

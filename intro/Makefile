@@ -1,12 +1,9 @@
-CFLAGS = -I../lib
+include ../Make.defines
 
-EXEC = daytimetcpcli daytimetcpsrv
+PROGS = daytimetcpcli daytimetcpsrv
 
-all: ${EXEC}
-
-daytimetcpcli: ../lib/error.o
-daytimetcpsrv: ../lib/wrapsock.o ../lib/error.o
+all: ${PROGS}
 
 clean:
-	-rm *.o ${EXEC}
+	rm -f ${PROGS} ${CLEANFILES}
 
