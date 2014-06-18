@@ -15,6 +15,9 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include <getopt.h>
+#include <sys/un.h>
+
 /* Define bzero() as a macro if it's not in standard C library. */
 #ifndef HAVE_BZERO
 #define bzero(ptr,n)	memset(ptr, 0, n)
@@ -34,5 +37,8 @@
 
 /* Following shortens all the typecasts of pointer arguments: */
 #define SA	struct sockaddr
+
+#define IPv4 1
+#define IPv6 2
 
 #endif	// __unp_h
